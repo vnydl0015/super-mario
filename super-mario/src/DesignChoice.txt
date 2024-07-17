@@ -1,0 +1,13 @@
+Comparing P2a against P2b:
+
+- New classes:
+I have implemented extra intermediate classes such as FloatingObject, Powers, and RandomMoveObject that are
+superclasses to certain game objects with those properties. These new classes are abstract as they include a few common
+methods and properties. By doing so, I minimised the usage of down-casting and repeated code in the subclasses.
+
+- Removal of interfaces:
+I have deleted some interfaces that do not serve >1 class.
+
+- GameSetting class to get level input
+Initially, my ShadowMario has a method that gets the input level/csv files. Npw, I placed this method in my GameSetting
+class for a better design.
